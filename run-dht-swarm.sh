@@ -23,6 +23,8 @@ docker service create \
 	--network tgoverlay \
 	--with-registry-auth \
 	--restart-condition none \
+  --reserve-memory 60mb \
+  --limit-memory 40mb \
 	-e TEST_INSTANCE_ROLE= \
 	-e TEST_INSTANCE_PARAMS="timeout_secs=300" \
 	-e TEST_RUN=run_$REPLICAS_$RUN \
@@ -33,5 +35,5 @@ docker service create \
 	-e TEST_BRANCH= \
 	-e TEST_CASE_SEQ=0 \
 	-e TEST_CASE=findpeers \
-	-e REDIS_HOST=172.31.14.166 \
+	-e REDIS_HOST=172.31.14.173 \
   909427826938.dkr.ecr.us-west-2.amazonaws.com/testground/testground-dht:jim1
