@@ -26,5 +26,5 @@ set wildmode=longest,list
 set expandtab
 EOF
 
-perl -pi -e 's#https://github.com/#git@github.com:#' ~/testground/.git/config
-perl -pi -e 's#https://github.com/#git@github.com:#' ~/testground-misc-scripts/.git/config
+perl -pi -e 's#https://github.com/#git\@github.com:#' ~/testground/.git/config
+perl -pi -e 's#https://github.com/#git\@github.com:#' ~/testground-misc-scripts/.git/config
