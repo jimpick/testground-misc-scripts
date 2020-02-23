@@ -5,7 +5,7 @@ echo "export EDITOR=vim" >> ~/.bashrc
 cat <<EOF > ~/.gitconfig
 [user]
 	name = Jim Pick
-	email = jim@backblend.com
+	email = jim@protocol.ai
 	username = jimpick
 [color]
 	ui = true
